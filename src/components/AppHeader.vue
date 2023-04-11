@@ -19,7 +19,6 @@ interface Link{
 
 <template>
     <div class="header">
-      <h1 class="visually-hidden">Главная страница сайта продаж.</h1>
       <div class="banner"></div>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
