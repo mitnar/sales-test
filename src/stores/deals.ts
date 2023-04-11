@@ -25,7 +25,7 @@ export const dealsStore = defineStore("deals", {
         let deals = data !== null ? JSON.parse(data) : [];
         this.items = deals;
         
-        if(filters.auction !== null && filters.auction !== undefined) { 
+        if(typeof filters.auction === 'boolean') { 
             this.items = this.items.filter(p => p.auction === filters.auction);
         }
 

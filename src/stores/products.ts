@@ -26,7 +26,7 @@ export const productsStore = defineStore("products", {
           
           // фильтрация должна происходить на бекенде
           // но поскольку бекенда нету, делаем ее на фронтенде
-          if(filters.auction) { 
+          if(typeof filters.auction === 'boolean') { 
             this.items = this.items.filter(p => p.auction === filters.auction);
           }
 

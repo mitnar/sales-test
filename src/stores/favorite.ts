@@ -26,7 +26,7 @@ export const favoriteStore = defineStore("favorite", {
         let productsArray = data !== null ? JSON.parse(data) : [];
         this.items = productsArray;
         
-        if(filters.auction) { 
+        if(typeof filters.auction === 'boolean') { 
             this.items = this.items.filter(p => p.auction === filters.auction);
         }
 
