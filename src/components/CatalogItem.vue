@@ -109,6 +109,7 @@ const setPaid = () => {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 852px 1fr;
+    max-width: 1166px;
 }
 
 .product-card:not(:last-child) {
@@ -154,13 +155,15 @@ const setPaid = () => {
     width: max-content;
     margin-bottom: 12px;
     color: #616CA5;
+    display: flex;
+    justify-content: center;
 }
 
 .product-card-address::before {
     content: '';
     width: 15px;
     height: 15px;
-    background: url('../images/geo.svg') no-repeat center;
+    background: url('../assets/images/geo.svg') no-repeat center;
     display: inline-block;
     margin-right: 4px;
 }

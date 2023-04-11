@@ -26,6 +26,7 @@ onMounted(() => {
 </script>
 
 <template> 
+    <h1 class="visually-hidden">Страница сделок.</h1>
     <section class="catalog-products">
         <CatalogHeader class="catalog-header"
                        @filter="filterDeals"/>

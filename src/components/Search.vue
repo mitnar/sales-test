@@ -28,7 +28,8 @@ const search = () => {
                v-model="searchValue"
                @input="search"/>
         <button type="button"
-                class="search-button"> 
+                class="search-button"
+                @click="search"> 
                 <span class="visually-hidden">Поиск в каталоге по указанному тексту.</span>
         </button>       
     </div>

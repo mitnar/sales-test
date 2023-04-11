@@ -25,7 +25,8 @@ onMounted(() => {
 
 </script>
 
-<template> 
+<template>
+    <h1 class="visually-hidden">Страница избранных товаров.</h1>
     <section class="catalog-products">
         <CatalogHeader class="catalog-header"
                        @filter="filterFavoriteProducts"/>

@@ -26,6 +26,7 @@ const filterProducts = (filter: CatalogFiltersType) => {
 </script>
 
 <template> 
+    <h1 class="visually-hidden">Страница склада.</h1>
     <section class="catalog-products">
         <CatalogHeader class="catalog-header"
                        @filter="filterProducts"/>
