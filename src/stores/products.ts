@@ -21,7 +21,7 @@ export const productsStore = defineStore("products", {
           const storeFilters = filtersStore();
           const filters : CatalogFiltersType = storeFilters.filters
 
-          const data = await axios.get('products.json', { filters } as AxiosRequestConfig)
+          const data = await axios.get('products.json', { params: filters })
           this.items = data.data;
           
           // фильтрация должна происходить на бекенде

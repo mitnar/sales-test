@@ -247,6 +247,7 @@ const setPaid = () => {
     border: none;
     font-weight: 500;
     font-size: 15px;
+    font-family: 'Rubik'
 }
 
  .product-card-btn:hover {
@@ -259,6 +260,10 @@ const setPaid = () => {
 
 .product-card-btn:focus {
     outline: solid 2px #ADD8E6;
+}
+
+.product-card-btn.add-to-deals {
+    color: #2D3B87;
 }
 
 .product-card-btn.add-to-deals, .product-card-btn.pay {
