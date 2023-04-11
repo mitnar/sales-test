@@ -3,11 +3,14 @@ import { RouterLink, RouterView} from 'vue-router'
 import { onMounted } from 'vue'
 import AppHeader from './components/AppHeader.vue'
 import {filtersStore} from './stores/filters'
+import { favoriteStore } from './stores/favorite';
 
-const store = filtersStore();
+const storeFilters = filtersStore();
+const storeFavorite = favoriteStore();
 
 onMounted(() => {
-  store.getFiltersFromLocalStorage();
+  storeFilters.getFiltersFromLocalStorage();
+  storeFavorite.fetchFavoriteProducts();
 }) 
 
 </script>
